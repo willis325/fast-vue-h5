@@ -1,0 +1,12 @@
+{
+  "Print Vue3 SFC": {
+    "scope": "vue",
+    "prefix": "vue3",
+    "body": [
+      "<script lang=\"ts\" setup></script>\n",
+      "<template>",
+      "  <div class=\"\">$1</div>",
+      "</template>\n",
+    ],
+  },
+}
