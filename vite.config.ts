@@ -13,9 +13,11 @@ export default defineConfig(({ mode }) => ({
     vue(),
     UnoCSS(),
     AutoImport({
-      imports: ['vue', 'vue-router', 'pinia', { vant: ['showFailToast', 'showLoadingToast', 'showSuccessToast', 'showToast', 'closeToast'] }, { '@vueuse/core': [] }],
+      imports: ['vue', 'vue-router', 'pinia', { vant: ['showFailToast', 'showLoadingToast', 'showSuccessToast', 'showToast', 'closeToast'] }, { '@vueuse/core': ['createFetch'] }],
+      dirs: ['src/hooks'],
       eslintrc: { enabled: true },
       dts: './types/auto-imports.d.ts',
+      vueTemplate: true,
     }),
     Components({ dts: './types/components.d.ts', resolvers: [VantResolver()] }),
   ],
