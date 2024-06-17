@@ -20,3 +20,7 @@ If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has a
 
 # Todo
 - [ ] commitlint 配置更精细
+
+# 常见问题
+- hint: The '.husky/_/pre-commit' hook was ignored because it's not set as executable.
+- sudo chmod 777 .husky/*
