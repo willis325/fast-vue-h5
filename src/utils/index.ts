@@ -1,2 +1,2 @@
 export * as Util from './util';
-export { default as Dayjs } from './dayjs';
+export { default as DayJs } from './dayjs';

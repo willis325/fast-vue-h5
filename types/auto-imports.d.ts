@@ -58,7 +58,10 @@ declare global {
   const shallowReactive: typeof import('vue')['shallowReactive']
   const shallowReadonly: typeof import('vue')['shallowReadonly']
   const shallowRef: typeof import('vue')['shallowRef']
+  const showConfirmDialog: typeof import('vant')['showConfirmDialog']
+  const showDialog: typeof import('vant')['showDialog']
   const showFailToast: typeof import('vant')['showFailToast']
+  const showImagePreview: typeof import('vant')['showImagePreview']
   const showLoadingToast: typeof import('vant')['showLoadingToast']
   const showSuccessToast: typeof import('vant')['showSuccessToast']
   const showToast: typeof import('vant')['showToast']
@@ -73,6 +76,7 @@ declare global {
   const useCssModule: typeof import('vue')['useCssModule']
   const useCssVars: typeof import('vue')['useCssVars']
   const useFetch: typeof import('../src/hooks/useFetch')['useFetch']
+  const useInitialize: typeof import('../src/hooks/useInitialize')['useInitialize']
   const useLink: typeof import('vue-router')['useLink']
   const usePostFetch: typeof import('../src/hooks/useFetch')['usePostFetch']
   const useRoute: typeof import('vue-router')['useRoute']
@@ -147,7 +151,10 @@ declare module 'vue' {
     readonly shallowReactive: UnwrapRef<typeof import('vue')['shallowReactive']>
     readonly shallowReadonly: UnwrapRef<typeof import('vue')['shallowReadonly']>
     readonly shallowRef: UnwrapRef<typeof import('vue')['shallowRef']>
+    readonly showConfirmDialog: UnwrapRef<typeof import('vant')['showConfirmDialog']>
+    readonly showDialog: UnwrapRef<typeof import('vant')['showDialog']>
     readonly showFailToast: UnwrapRef<typeof import('vant')['showFailToast']>
+    readonly showImagePreview: UnwrapRef<typeof import('vant')['showImagePreview']>
     readonly showLoadingToast: UnwrapRef<typeof import('vant')['showLoadingToast']>
     readonly showSuccessToast: UnwrapRef<typeof import('vant')['showSuccessToast']>
     readonly showToast: UnwrapRef<typeof import('vant')['showToast']>
@@ -162,6 +169,7 @@ declare module 'vue' {
     readonly useCssModule: UnwrapRef<typeof import('vue')['useCssModule']>
     readonly useCssVars: UnwrapRef<typeof import('vue')['useCssVars']>
     readonly useFetch: UnwrapRef<typeof import('../src/hooks/useFetch')['useFetch']>
+    readonly useInitialize: UnwrapRef<typeof import('../src/hooks/useInitialize')['useInitialize']>
     readonly useLink: UnwrapRef<typeof import('vue-router')['useLink']>
     readonly usePostFetch: UnwrapRef<typeof import('../src/hooks/useFetch')['usePostFetch']>
     readonly useRoute: UnwrapRef<typeof import('vue-router')['useRoute']>
@@ -229,7 +237,10 @@ declare module '@vue/runtime-core' {
     readonly shallowReactive: UnwrapRef<typeof import('vue')['shallowReactive']>
     readonly shallowReadonly: UnwrapRef<typeof import('vue')['shallowReadonly']>
     readonly shallowRef: UnwrapRef<typeof import('vue')['shallowRef']>
+    readonly showConfirmDialog: UnwrapRef<typeof import('vant')['showConfirmDialog']>
+    readonly showDialog: UnwrapRef<typeof import('vant')['showDialog']>
     readonly showFailToast: UnwrapRef<typeof import('vant')['showFailToast']>
+    readonly showImagePreview: UnwrapRef<typeof import('vant')['showImagePreview']>
     readonly showLoadingToast: UnwrapRef<typeof import('vant')['showLoadingToast']>
     readonly showSuccessToast: UnwrapRef<typeof import('vant')['showSuccessToast']>
     readonly showToast: UnwrapRef<typeof import('vant')['showToast']>
@@ -244,6 +255,7 @@ declare module '@vue/runtime-core' {
     readonly useCssModule: UnwrapRef<typeof import('vue')['useCssModule']>
     readonly useCssVars: UnwrapRef<typeof import('vue')['useCssVars']>
     readonly useFetch: UnwrapRef<typeof import('../src/hooks/useFetch')['useFetch']>
+    readonly useInitialize: UnwrapRef<typeof import('../src/hooks/useInitialize')['useInitialize']>
     readonly useLink: UnwrapRef<typeof import('vue-router')['useLink']>
     readonly usePostFetch: UnwrapRef<typeof import('../src/hooks/useFetch')['usePostFetch']>
     readonly useRoute: UnwrapRef<typeof import('vue-router')['useRoute']>

@@ -6,20 +6,29 @@ import AutoImport from 'unplugin-auto-import/vite';
 import Components from 'unplugin-vue-components/vite';
 import { VantResolver } from '@vant/auto-import-resolver';
 import PostCssPxToViewport from 'postcss-px-to-viewport-8-plugin';
+import vueSetupExtend from 'unplugin-vue-setup-extend-plus/vite';
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
+  base: './',
   plugins: [
     vue(),
     UnoCSS(),
     AutoImport({
-      imports: ['vue', 'vue-router', 'pinia', { vant: ['showFailToast', 'showLoadingToast', 'showSuccessToast', 'showToast', 'closeToast'] }, { '@vueuse/core': ['createFetch'] }],
+      imports: [
+        'vue',
+        'vue-router',
+        'pinia',
+        { vant: ['showFailToast', 'showLoadingToast', 'showSuccessToast', 'showToast', 'closeToast', 'showDialog', 'showConfirmDialog', 'showImagePreview'] },
+        { '@vueuse/core': ['createFetch'] },
+      ],
       dirs: ['src/hooks'],
       eslintrc: { enabled: true },
       dts: './types/auto-imports.d.ts',
       vueTemplate: true,
     }),
     Components({ dts: './types/components.d.ts', resolvers: [VantResolver()] }),
+    vueSetupExtend({}),
   ],
   esbuild: {
     drop: mode === 'production' ? ['console', 'debugger'] : [],

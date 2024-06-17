@@ -6,6 +6,7 @@
 .idea
 .husky
 .local
+.eslintrc
 Dockerfile
 node_modules
 dist

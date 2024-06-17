@@ -10,7 +10,7 @@
     "parser": "@typescript-eslint/parser",
     "sourceType": "module"
   },
-  "plugins": ["@typescript-eslint", "vue"],
+  "plugins": ["@typescript-eslint", "prettier", "vue"],
   "extends": ["eslint:recommended", "plugin:@typescript-eslint/recommended", "plugin:vue/vue3-essential", "plugin:prettier/recommended", "./.eslintrc-auto-import.json"],
   "rules": {
     "vue/multi-word-component-names": "off",

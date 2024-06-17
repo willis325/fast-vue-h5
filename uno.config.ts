@@ -6,6 +6,7 @@ export default defineConfig({
     'flex-row-between': 'flex flex-row items-center justify-between',
     'flex-row-middle-center': 'flex flex-row items-center justify-center',
     'flex-col-center': 'flex flex-col justify-center',
+    'flex-col-middle': 'flex flex-col justify-center',
     'flex-col-middle-center': 'flex flex-col items-center justify-center',
     'b-base': 'b-1 b-solid b-white',
   },

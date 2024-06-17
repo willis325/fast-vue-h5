@@ -87,6 +87,10 @@
     "watchSyncEffect": true,
     "createFetch": true,
     "useFetch": true,
-    "usePostFetch": true
+    "usePostFetch": true,
+    "showImagePreview": true,
+    "showConfirmDialog": true,
+    "showDialog": true,
+    "useInitialize": true
   }
 }
