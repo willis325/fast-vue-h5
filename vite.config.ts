@@ -22,16 +22,16 @@ export default defineConfig(({ mode }) => ({
         { vant: ['showFailToast', 'showLoadingToast', 'showSuccessToast', 'showToast', 'closeToast', 'showDialog', 'showConfirmDialog', 'showImagePreview'] },
         { '@vueuse/core': ['createFetch'] },
       ],
-      dirs: ['src/hooks'],
+      dirs: ['src/hooks', 'src/store'],
       eslintrc: { enabled: true },
       dts: './types/auto-imports.d.ts',
       vueTemplate: true,
     }),
-    Components({ dts: './types/components.d.ts', resolvers: [VantResolver()] }),
+    Components({ dirs: ['src/components'], extensions: ['vue'], deep: true, dts: './types/components.d.ts', resolvers: [VantResolver()] }),
     vueSetupExtend({}),
   ],
   esbuild: {
-    drop: mode === 'production' ? ['console', 'debugger'] : [],
+    drop: mode === 'prod' ? ['console', 'debugger'] : [],
   },
   build: {
     rollupOptions: {
