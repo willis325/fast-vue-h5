@@ -16,13 +16,6 @@ import router from './router';
 const pinia = createPinia();
 const app = createApp(App);
 
-const components = import.meta.glob('@/components/**/*.vue');
-Object.keys(components).forEach((path) => {
-  const filename = path.replace('/src/components/', '').replace('.vue', '');
-  const name = filename.split('/').join('-');
-  app.component(name, components[path]);
-});
-
 if (import.meta.env.MODE !== 'prod') new vconsole();
 allowMultipleToast();
 
