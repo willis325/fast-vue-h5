@@ -76,12 +76,14 @@ declare global {
   const useCssModule: typeof import('vue')['useCssModule']
   const useCssVars: typeof import('vue')['useCssVars']
   const useFetch: typeof import('../src/hooks/useFetch')['useFetch']
+  const useGetFetch: typeof import('../src/hooks/useFetch')['useGetFetch']
   const useInitialize: typeof import('../src/hooks/useInitialize')['useInitialize']
   const useLink: typeof import('vue-router')['useLink']
   const usePostFetch: typeof import('../src/hooks/useFetch')['usePostFetch']
   const useRoute: typeof import('vue-router')['useRoute']
   const useRouter: typeof import('vue-router')['useRouter']
   const useSlots: typeof import('vue')['useSlots']
+  const useUserStore: typeof import('../src/store/user')['useUserStore']
   const watch: typeof import('vue')['watch']
   const watchEffect: typeof import('vue')['watchEffect']
   const watchPostEffect: typeof import('vue')['watchPostEffect']
@@ -169,12 +171,14 @@ declare module 'vue' {
     readonly useCssModule: UnwrapRef<typeof import('vue')['useCssModule']>
     readonly useCssVars: UnwrapRef<typeof import('vue')['useCssVars']>
     readonly useFetch: UnwrapRef<typeof import('../src/hooks/useFetch')['useFetch']>
+    readonly useGetFetch: UnwrapRef<typeof import('../src/hooks/useFetch')['useGetFetch']>
     readonly useInitialize: UnwrapRef<typeof import('../src/hooks/useInitialize')['useInitialize']>
     readonly useLink: UnwrapRef<typeof import('vue-router')['useLink']>
     readonly usePostFetch: UnwrapRef<typeof import('../src/hooks/useFetch')['usePostFetch']>
     readonly useRoute: UnwrapRef<typeof import('vue-router')['useRoute']>
     readonly useRouter: UnwrapRef<typeof import('vue-router')['useRouter']>
     readonly useSlots: UnwrapRef<typeof import('vue')['useSlots']>
+    readonly useUserStore: UnwrapRef<typeof import('../src/store/user')['useUserStore']>
     readonly watch: UnwrapRef<typeof import('vue')['watch']>
     readonly watchEffect: UnwrapRef<typeof import('vue')['watchEffect']>
     readonly watchPostEffect: UnwrapRef<typeof import('vue')['watchPostEffect']>
@@ -255,12 +259,14 @@ declare module '@vue/runtime-core' {
     readonly useCssModule: UnwrapRef<typeof import('vue')['useCssModule']>
     readonly useCssVars: UnwrapRef<typeof import('vue')['useCssVars']>
     readonly useFetch: UnwrapRef<typeof import('../src/hooks/useFetch')['useFetch']>
+    readonly useGetFetch: UnwrapRef<typeof import('../src/hooks/useFetch')['useGetFetch']>
     readonly useInitialize: UnwrapRef<typeof import('../src/hooks/useInitialize')['useInitialize']>
     readonly useLink: UnwrapRef<typeof import('vue-router')['useLink']>
     readonly usePostFetch: UnwrapRef<typeof import('../src/hooks/useFetch')['usePostFetch']>
     readonly useRoute: UnwrapRef<typeof import('vue-router')['useRoute']>
     readonly useRouter: UnwrapRef<typeof import('vue-router')['useRouter']>
     readonly useSlots: UnwrapRef<typeof import('vue')['useSlots']>
+    readonly useUserStore: UnwrapRef<typeof import('../src/store/user')['useUserStore']>
     readonly watch: UnwrapRef<typeof import('vue')['watch']>
     readonly watchEffect: UnwrapRef<typeof import('vue')['watchEffect']>
     readonly watchPostEffect: UnwrapRef<typeof import('vue')['watchPostEffect']>

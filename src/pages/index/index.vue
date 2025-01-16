@@ -5,9 +5,8 @@ onActivated(() => console.log('onActivated'));
 </script>
 
 <template>
-  <div class="flex-col-middle-center">
-    <HelloWorld msg="hello vue3-vant-template ~" />
-
-    <van-button type="primary" @click="router.push('/login')">Login</van-button>
+  <div class="flex-col-center h-100vh">
+    <HelloWorld msg="vue-fast-h5" />
+    <van-button type="primary" class="mt-8" @click="router.push('/login')">Login</van-button>
   </div>
 </template>

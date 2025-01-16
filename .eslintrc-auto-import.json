@@ -91,6 +91,8 @@
     "showImagePreview": true,
     "showConfirmDialog": true,
     "showDialog": true,
-    "useInitialize": true
+    "useInitialize": true,
+    "useGetFetch": true,
+    "useUserStore": true
   }
 }

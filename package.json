@@ -1,8 +1,16 @@
 {
-  "name": "willis-vue3-vant",
+  "name": "vue-fast-h5",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.1.0",
   "type": "module",
+  "license": "MIT",
+  "author": "willis<793207918@qq.com>",
+  "description": "vue3 + vant 快速开发模板",
+  "homepage": "https://github.com/willis325/vue-fast-h5",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/willis325/vue-fast-h5.git"
+  },
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc && vite build",

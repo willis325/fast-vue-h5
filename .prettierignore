@@ -15,3 +15,4 @@ docs
 bin
 types
 src/vite-env.d.ts
+.eslintrc

@@ -1,5 +1,3 @@
-import { createFetch } from '@vueuse/core';
-
 interface RequestConfig {
   signature?: boolean; // 是否验签
   isReturnNativeResponse?: boolean; // 是否原样返回 res
@@ -12,7 +10,12 @@ export const useFetch = (baseUrl: string, config?: RequestConfig) =>
     baseUrl,
     options: {
       async beforeFetch({ options }) {
-        options.headers = { ...options.headers, 'Content-Type': 'application/json' };
+        const userStore = useUserStore();
+        const { token } = storeToRefs(userStore);
+        const headers = { 'Content-Type': 'application/json' };
+
+        token && Object.assign(headers, { Authorization: token.value });
+        options.headers = { ...options.headers, ...headers };
         return { options };
       },
       afterFetch({ data }) {
@@ -31,3 +34,6 @@ export const useFetch = (baseUrl: string, config?: RequestConfig) =>
 
 // prettier-ignore
 export const usePostFetch = <T>(url: string, payload?: unknown, config?: RequestConfig) => useFetch(import.meta.env.VITE_BASE_API, config)<T>(url).post(payload).json<T>();
+
+// prettier-ignore
+export const useGetFetch = <T>(url: string, config?: RequestConfig) => useFetch(import.meta.env.VITE_BASE_API, config)<T>(url).get().json<T>();
