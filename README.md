@@ -1,14 +1,14 @@
 
-<h1 align="center">vue-fast-h5</h1>
+<h1 align="center">fast-vue-h5</h1>
 
-[![GitHub Repo stars](https://img.shields.io/github/stars/willis325/vue-fast-h5?style=flat&logo=github)](https://github.com/willis325/vue-fast-h5)
+[![GitHub Repo stars](https://img.shields.io/github/stars/willis325/fast-vue-h5?style=flat&logo=github)](https://github.com/willis325/fast-vue-h5)
 ![node version](https://img.shields.io/badge/node-%3E%3D18-green)
 ![pnpm version](https://img.shields.io/badge/pnpm-%3E%3D8-green)
-![GitHub License](https://img.shields.io/github/license/willis325/vue-fast-h5)
+![GitHub License](https://img.shields.io/github/license/willis325/fast-vue-h5)
 
-`vue-fast-h5` 是一个基于 `Vue3` 的快速开发框架，旨在帮助开发者快速搭建一个高性能、易维护、可扩展的移动端 `H5` 项目。
+`fast-vue-h5` 是一个基于 `Vue3` 的快速开发框架，旨在帮助开发者快速搭建一个高性能、易维护、可扩展的移动端 `H5` 项目。
 
-> 如果 `vue-fast-h5` 帮到了您，别忘了点个 ⭐️，您的认可是我最大的动力！
+> 如果 `fast-vue-h5` 帮到了您，别忘了点个 ⭐️，您的认可是我最大的动力！
 
 ## 特性
 

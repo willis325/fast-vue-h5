@@ -6,7 +6,7 @@ onActivated(() => console.log('onActivated'));
 
 <template>
   <div class="flex-col-center h-100vh">
-    <HelloWorld msg="vue-fast-h5" />
+    <HelloWorld msg="fast-vue-h5" />
     <van-button type="primary" class="mt-8" @click="router.push('/login')">Login</van-button>
   </div>
 </template>
