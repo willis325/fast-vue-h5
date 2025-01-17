@@ -26,7 +26,6 @@
   "dependencies": {
     "@vueuse/core": "^10.7.2",
     "dayjs": "^1.11.10",
-    "lodash-es": "^4.17.21",
     "pinia": "^2.1.7",
     "pinia-plugin-persistedstate": "^3.2.1",
     "vant": "^4.8.1",
